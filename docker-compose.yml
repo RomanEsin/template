@@ -1,0 +1,10 @@
+version: '3'
+services:
+  tmp:
+    build: .
+    container_name: tmp_app
+    ports:
+    - 1337:1337
+    environment:
+      PORT: 1337
+    restart: always
