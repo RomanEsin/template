@@ -2,6 +2,11 @@ from fastapi import FastAPI
 from typing import List, Optional
 from starlette.middleware.cors import CORSMiddleware
 
+from Database.database import engine
+from Models import models
+
+models.Base.metadata.create_all(bind=engine)
+
 
 origins = [
     "*"
