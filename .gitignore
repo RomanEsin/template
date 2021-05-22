@@ -7,7 +7,7 @@ pyvenv.cfg
 __pycache__/
 *.py[cod]
 *$py.class
-
+*.cfg
 # C extensions
 *.so
 
@@ -117,3 +117,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+pyvenv.cfg
